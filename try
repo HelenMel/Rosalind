@@ -1,0 +1,19 @@
+import readFile
+import parse
+import useful
+import pointsDistances
+import lloydAlgorithm
+
+#listOfLines = readFile.listFromInput()
+#print listOfLines
+#Data = [[2,6],[4,9],[5,6],[6,5],[8,3]]
+Data = [[17, 0, -4], [3, 14, 23], [9, 7, 16], [7, 3, 5]]
+print Data
+Centers = [[3, 5], [5, 4]]
+print "result"
+#result = max([pointsDistances.distanceToCenters(x, Centers) for x in Data])
+#result = pointsDistances.squaredErrorDistortion(Data, Centers)
+result = lloydAlgorithm.gravityCenter(Data,[])
+print result
+readFile.lineToOutput(result)
+    
